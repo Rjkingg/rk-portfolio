@@ -1,12 +1,20 @@
 import React from "react"
 import "../App.css"
+import { Card, CardBody, CardText, CardTitle, CardSubtitle } from "reactstrap"
 
 const Project = () => {
     return(
-        <div>
-            <h3>Projects</h3>
-            <p>Details</p>
-        </div>
+        <Card className="card mx-auto"
+        color="primary"
+        inverse
+        style={{
+            width: '18rem'
+          }}>
+            <CardBody>
+            <CardTitle>Project</CardTitle>
+             <CardText>Details</CardText>
+             </CardBody>
+         </Card>
     )
 }
 
